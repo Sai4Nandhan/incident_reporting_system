@@ -1,0 +1,169 @@
+/* =========================
+   DASHBOARD PAGE ONLY
+========================= */
+
+.dashboard-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #eaeaea;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.dashboard-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* =========================
+   CARD BASE
+========================= */
+
+.dashboard-page .card {
+  background: #111111;
+  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+
+.dashboard-page label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #b0b0b0;
+}
+
+.dashboard-page input,
+.dashboard-page textarea,
+.dashboard-page select {
+  width: 100%;
+  background: #0f0f0f;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.dashboard-page input::placeholder,
+.dashboard-page textarea::placeholder {
+  color: #6f6f6f;
+}
+
+.dashboard-page input:focus,
+.dashboard-page textarea:focus,
+.dashboard-page select:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+.dashboard-page textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* File input */
+.dashboard-page input[type="file"] {
+  border: 1px dashed #2a2a2a;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Submit button */
+.dashboard-page button {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   INCIDENT CARD CONTENT
+========================= */
+
+.incident-title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.incident-meta {
+  font-size: 13px;
+  color: #9a9a9a;
+  margin-bottom: 14px;
+}
+
+.status label {
+  font-size: 12px;
+  color: #9a9a9a;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.status select {
+  background: #0f0f0f;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #ffffff;
+}
+
+/* =========================
+   EVIDENCE SECTION
+========================= */
+
+.evidence {
+  margin-top: 14px;
+}
+
+.evidence-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.evidence a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Delete evidence button */
+.delete-evidence {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .dashboard-page .card {
+    padding: 18px;
+  }
+}
+

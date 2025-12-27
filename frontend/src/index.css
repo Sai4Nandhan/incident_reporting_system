@@ -1,0 +1,111 @@
+/* =========================
+   GLOBAL BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  padding: 100px 80px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 68px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  max-width: 520px;
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 36px;
+}
+
+.hero button {
+  padding: 14px 28px;
+  background: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-visual img {
+  width: 100%;
+  border-radius: 18px;
+  opacity: 0.9;
+}
+
+/* =========================
+   TEXT REVEAL MASK
+========================= */
+.reveal {
+  overflow: hidden;
+}
+
+.reveal span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+/* =========================
+   INFO SECTIONS
+========================= */
+.info {
+  padding: 80px 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.info h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.info p {
+  max-width: 680px;
+  font-size: 17px;
+  opacity: 0.85;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 80px 32px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .info {
+    padding: 64px 32px;
+  }
+}
+
+
+
